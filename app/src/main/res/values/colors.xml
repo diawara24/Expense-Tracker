@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#388E3C</color>
+    <color name="colorPrimaryDark">#32CD32</color>
+    <color name="background">#f2f3f4</color>
+    <color name="colorAccent">#9E9E9E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="success">#388E3C</color>
+    <color name="failure">#FF5252</color>
+    <color name="purple">#3700B3</color>
+    <color name="grey">#808080</color>
+    <color name="graylight">#BEBEBE</color>
+    <color name="startblue">#2F4F4F</color>
+    <color name="endblue">#008B00</color>
+    <color name="black">#010203</color>
+</resources>

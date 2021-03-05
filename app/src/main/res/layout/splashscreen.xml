@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:clickable="true"
+        android:id="@+id/splasImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="265dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/salary" />
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Keep track of every penny of yours"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+    </LinearLayout>

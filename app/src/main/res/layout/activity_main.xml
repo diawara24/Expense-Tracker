@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/gradientbackground">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:contentDescription="@string/app_name"
+                android:background="@drawable/user_shape"
+                android:src="@drawable/user"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:layout_marginHorizontal="32px"
+            android:layout_marginVertical="64px" >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/nomTextView"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Pseudoname"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:hint="name"
+                style="@style/Casual"/>
+
+            <ImageView
+                android:id="@+id/nom"
+                android:layout_width="50dp"
+                android:layout_height="53dp"
+                android:src="@drawable/nom"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:ems="10"
+                android:gravity="right"
+                android:inputType="text"
+                android:textSize="24sp"
+                android:backgroundTint="@color/endblue"
+                android:textColor="@color/black"
+                style="@style/Casual"/>
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:layout_marginHorizontal="32px"
+                android:layout_marginVertical="64px" >
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/amountTextView"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Expense/Week"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    style="@style/Casual"/>
+
+                <ImageView
+                    android:id="@+id/amountImg"
+                    android:layout_width="50dp"
+                    android:layout_height="53dp"
+                    android:src="@drawable/amount"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/expenseAmount"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:textSize="24sp"
+                    android:backgroundTint="@color/endblue"
+                    android:textColor="@color/black"
+                    style="@style/Casual"/>
+
+            </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="Login"
+            android:radius="21dp"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</ScrollView>
